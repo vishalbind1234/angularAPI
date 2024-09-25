@@ -8,7 +8,7 @@ pipeline{
 		}
 		stage("build project and create image project"){
 			steps{
-				sh 'docker build -t vishalbind/angularapi02' .
+				sh 'docker build -t vishalbind/angularapi02 .'
 			}
 		}
 		stage("login and push image"){
