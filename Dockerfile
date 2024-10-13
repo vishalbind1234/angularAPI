@@ -13,6 +13,7 @@ RUN	cd /root/jdkRepo/jdk17-2 && git lfs pull
 RUN	cd /root/jdkRepo/jdk17-2 && mkdir /usr/lib/jvm && tar -zxvf jdk-17_bin.tar.gz -C /usr/lib/jvm   
 
 ENV JAVA_HOME=/usr/lib/jvm/jdk-17.0.11
+
 RUN export JAVA_HOME
 
 ENV PATH=$PATH:/usr/lib/jvm/jdk-17.0.11/bin
